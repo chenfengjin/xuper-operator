@@ -1,0 +1,20 @@
+# permissions for end users to view xuperchains.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: xuperchain-viewer-role
+rules:
+- apiGroups:
+  - xchain.xuper.baidu.com
+  resources:
+  - xuperchains
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - xchain.xuper.baidu.com
+  resources:
+  - xuperchains/status
+  verbs:
+  - get

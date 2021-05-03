@@ -1,0 +1,19 @@
+domain: xuper.baidu.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: xuper-operator
+repo: github.com/xuperchain/xuper-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: xuper.baidu.com
+  group: xchain
+  kind: XuperChain
+  path: github.com/xuperchain/xuper-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

@@ -1,0 +1,7 @@
+apiVersion: xchain.xuper.baidu.com/v1alpha1
+kind: XuperChain
+metadata:
+  name: xuperchain-sample
+spec:
+  # Add fields here
+  foo: bar
